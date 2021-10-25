@@ -98,7 +98,7 @@ apt-autoremove(){
 
 thanks(){
 
-	curl http://theinfogitlab.com/deb/serversystems.txt
+	curl https://theinfogitlab.com/deb/serversystems.txt
 
 	echo -e "\n\n Thanks, created by theinfogitlab.com\n\n"
 	sudo apt-get --fix-broken install | grep 0
@@ -110,7 +110,7 @@ if [[ $1 == "--upg" ]]; then
 
 	/usr/bin/clear
 
-	curl http://theinfogitlab.com/deb/theinfogitlab.txt
+	curl https://theinfogitlab.com/deb/theinfogitlab.txt
 
 	echo -e "Updater Version: ${V} / Welcome ${user_log}. \n\n"
 	echo -e "This script run apt-get update && upgrade"
